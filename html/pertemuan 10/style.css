@@ -1,6 +1,7 @@
 :root {
     --sidebar-width: 260px;
     --active-menu: linear-gradient(90deg, #1f6fd1, #4a2a9c);
+    --topbar-height: 60px;
 }
 
 Body {
@@ -58,4 +59,25 @@ Body {
 
 .sidebar-nav .nav-link:not(.active):hover .menu-icon {
     transform: rotateY(180deg);
+}
+
+.sidebar-nav .nav-link .menu-title {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+#content-wrapper {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Topbar */
+#topbar {
+    height: var(--topbar-height);
+    padding: 0 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
